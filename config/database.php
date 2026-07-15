@@ -23,8 +23,8 @@ if (!defined('BASE_URL')) {
 
 $host = 'localhost';
 $db = 'school_db';
-$user = 'root';
-$pass = ''; // Default for local installations, update as needed
+$user = 'schooluser';
+$pass = 'School@12345'; // Default for local installations, update as needed
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
