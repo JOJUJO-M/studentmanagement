@@ -4,6 +4,7 @@ require_once __DIR__ . '/../config/database.php';
 require_once __DIR__ . '/../config/theme.php';
 require_once __DIR__ . '/../config/auth.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,6 +34,7 @@ require_once __DIR__ . '/../config/auth.php';
 <body class="<?php echo $body_class ?? ''; ?>">
 
     <?php if (is_logged_in() && !isset($plain_layout)): ?>
+        <div class="sidebar-overlay"></div>
         <div class="app-container">
             <?php include __DIR__ . '/sidebar.php'; ?>
             <main class="content-area">
@@ -61,6 +63,9 @@ require_once __DIR__ . '/../config/auth.php';
                                 <img src="<?php echo BASE_URL; ?>/assets/images/CBE_Logo2.png" alt="Logo">
                                 <span><?php echo get_setting('system_name', 'CBE System'); ?></span>
                             </div>
+                            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                                <i class="fas fa-bars"></i>
+                            </button>
                             <div class="nav-links">
                                 <a href="<?php echo BASE_URL; ?>/index.php">Home</a>
                                 <a href="#features">About </a>

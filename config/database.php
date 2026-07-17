@@ -67,4 +67,4 @@ $courseObj = new Course($pdo);
 $enrollmentObj = new Enrollment($pdo);
 $feeObj = new Fee($pdo);
 
- 
+// Database credentials are configured above. Create users manually in MySQL if needed.

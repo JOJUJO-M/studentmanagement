@@ -21,11 +21,11 @@ echo "Theme Primary Color: " . $theme['primary'] . "\n";
 
 echo "Syntax check for key files...\n";
 $files = [
-    'public/login.php',
-    'public/register.php',
-    'public/dashboard.php',
-    'public/api/auth.php',
-    'public/api/crud.php'
+    'login.php',
+    'register.php',
+    'dashboard.php',
+    'api/auth.php',
+    'api/crud.php'
 ];
 
 foreach ($files as $file) {
